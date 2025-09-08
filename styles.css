@@ -937,22 +937,7 @@ body {
 
 @media (max-width: 480px) {
     .hero-text h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-        height: auto;
-        position: static;
-        letter-spacing: -2px;
-    }
-    
-    .hero-text h1 .line-1,
-    .hero-text h1 .line-2 {
-        position: static;
-        display: block;
-        margin: 0;
-    }
-    
-    .hero-text h1 .line-1 {
-        margin-bottom: -0.2rem;
+        display: none;
     }
     
     .hero-text p {
