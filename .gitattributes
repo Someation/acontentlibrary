@@ -6,6 +6,9 @@ thumbnail.* !filter !diff !merge
 Media/1_HomePage/** !filter !diff !merge
 # Small SCA Health media files (photos and small videos only)
 Media/2_SCA-Health/thumbnail.JPG !filter !diff !merge
+Media/2_SCA-Health/Featured?Media/sca-health-behind-scenes-*.jpg !filter !diff !merge
+Media/2_SCA-Health/Featured?Media/sca-health-final-photo-*.jpg !filter !diff !merge
+Media/2_SCA-Health/Featured?Media/sca-health-portrait-short-*.mp4 !filter !diff !merge
 # All other media files use LFS
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
@@ -19,3 +22,6 @@ Media/2_SCA-Health/thumbnail.JPG !filter !diff !merge
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 Media/1_HomePage/** !text !filter !merge !diff
 Media/*/thumbnail.* !text !filter !merge !diff
+Media/2_SCA-Health/Featured[[:space:]]Media/sca-health-behind-scenes-*.jpg !text !filter !merge !diff
+Media/2_SCA-Health/Featured[[:space:]]Media/sca-health-final-photo-*.jpg !text !filter !merge !diff
+Media/2_SCA-Health/Featured[[:space:]]Media/sca-health-portrait-short-*.mp4 !text !filter !merge !diff
