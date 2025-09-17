@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Content Library</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,8 +30,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#team">About</a></li>
-                <li><a href="#case-studies">Work</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
             </ul>
             <button class="btn-primary" onclick="window.location.href='mailto:joey@joeyschiappa.com'">Contact</button>
         </nav>
@@ -48,8 +49,8 @@
         <div class="hero-video">
             <div class="video-player" id="video-player">
                 <video id="story-video" muted autoplay>
-                    <source src="Media/Hunter Douglas_1.mov" type="video/quicktime">
-                    <source src="Media/Hunter Douglas_1.mov" type="video/mp4">
+                    <source src="Media/1_HomePage/Hunter Douglas_1.mov" type="video/quicktime">
+                    <source src="Media/1_HomePage/Hunter Douglas_1.mov" type="video/mp4">
                 </video>
                 <div class="video-overlay"></div>
                 <div class="video-progress">
@@ -66,8 +67,68 @@
         </div>
     </section>
 
+    <!-- Case Studies Showcase Section -->
+    <section class="case-studies-showcase" id="case-studies">
+        <div class="showcase-header">
+            <span class="label">Our Work</span>
+            <h2>Recent Case Studies</h2>
+            <p>Explore how we've helped brands create compelling content ecosystems that drive engagement and deliver results.</p>
+        </div>
+        
+        <div class="case-studies-grid-home">
+            <div class="case-study-card-home" onclick="window.location.href='case-study-sca-health.html'">
+                <div class="case-study-media-home">
+                    <img src="Media/2_SCA-Health/thumbnail.JPG" alt="SCA Health Case Study" class="case-study-thumbnail-home">
+                </div>
+                <div class="case-study-info-home">
+                    <span class="case-study-category-home">Healthcare</span>
+                    <h3>SCA Health</h3>
+                    <p>Building an employee-story series and flagship values film that earned Bell Seal (Gold) recognition.</p>
+                </div>
+            </div>
+
+            <div class="case-study-card-home" onclick="window.location.href='case-study-mcdonalds.html'">
+                <div class="case-study-media-home">
+                    <img src="Media/3_McDonalds/thumbnail.jpg" alt="McDonald's Case Study" class="case-study-thumbnail-home">
+                </div>
+                <div class="case-study-info-home">
+                    <span class="case-study-category-home">Corporate</span>
+                    <h3>McDonald's</h3>
+                    <p>Developing a comprehensive visual archive of signage across the United States through strategic geo-planning.</p>
+                </div>
+            </div>
+
+            <div class="case-study-card-home" onclick="window.location.href='case-study-hunter-douglas.html'">
+                <div class="case-study-media-home">
+                    <img src="Media/4_Hunter Douglas/thumbnail.png" alt="Hunter Douglas Case Study" class="case-study-thumbnail-home">
+                </div>
+                <div class="case-study-info-home">
+                    <span class="case-study-category-home">Brand Content</span>
+                    <h3>Hunter Douglas</h3>
+                    <p>Creating compelling product showcases and brand storytelling that drives customer engagement.</p>
+                </div>
+            </div>
+
+            <div class="case-study-card-home" onclick="window.location.href='case-study-hbic.html'">
+                <div class="case-study-media-home">
+                    <img src="Media/5_Head Bartender In Charge/thumbnail.png" alt="Head Bartender in Charge Case Study" class="case-study-thumbnail-home">
+                </div>
+                <div class="case-study-info-home">
+                    <span class="case-study-category-home">Hospitality</span>
+                    <h3>Head Bartender in Charge</h3>
+                    <p>Showcasing the artistry and personality behind craft cocktail culture through dynamic content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase-cta">
+            <a href="case-studies.html" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services" id="services">
+        <span class="label">Our Services</span>
         <h2 class="section-title">Make · Manage · Market<br><span class="subtitle">pick your level</span></h2>
         <div class="services-grid">
             <div class="service-card">
@@ -116,26 +177,6 @@
         </div>
         <div class="services-cta">
             <button class="btn-primary" onclick="window.location.href='mailto:joey@joeyschiappa.com'">Contact</button>
-        </div>
-    </section>
-
-    <!-- Case Study Section -->
-    <section class="case-study" id="case-studies">
-        <div class="case-study-container">
-            <div class="case-study-content">
-                <span class="label">Our Work</span>
-                <h2>Creating a content ecosystem<br>for <em>SCA-Health</em></h2>
-                <p>Our work building an employee-story series spotlighted career journeys and reasons to stay at SCA-Health. Those moments were unified into a flagship values film tied to SCA's pillars. The campaign coincided with SCA Health's Bell Seal (Gold) recognition and was delivered as a channel-ready content library.</p>
-            </div>
-            <div class="case-study-video">
-                <iframe src="https://player.vimeo.com/video/729395013?h=8b8b8b8b8b&autoplay=0&loop=0&muted=0&controls=1&responsive=1&background=0" 
-                        width="100%" 
-                        height="280" 
-                        frameborder="0" 
-                        allow="autoplay; fullscreen; picture-in-picture" 
-                        allowfullscreen>
-                </iframe>
-            </div>
         </div>
     </section>
 
