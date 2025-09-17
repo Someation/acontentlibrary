@@ -1,3 +1,8 @@
+# Exclude thumbnails from LFS so GitHub Pages can serve them
+*/thumbnail.* !filter !diff !merge
+thumbnail.* !filter !diff !merge
+
+# All other media files use LFS
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
